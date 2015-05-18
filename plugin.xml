@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.example.myplugin.MediaVolumePlugin"
+        version="1.0">
+
+   <name>Hello World Plugin</name>
+
+   <description>
+      Just to run a plugin.
+   </description>
+
+   <license>MIT</license>
+
+   <engines>
+      <engine name="cordova" version=">=3.0.0"/>
+   </engines>
+
+   <platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+         <feature name="MediaVolumePlugin">
+            <param name="android-package" value="com.example.myplugin.MediaVolumePlugin" />
+         </feature>
+      </config-file>
+
+      <js-module src="www/MediaVolumePlugin.js" name="MediaVolumePlugin">
+         <clobbers target="cordova.plugins.MediaVolumePlugin" />
+      </js-module>
+
+      <source-file src="src/android/MediaVolumePlugin.java" target-dir="src/com/example/myplugin/MediaVolumePlugin" />
+
+   </platform>
+</plugin>
