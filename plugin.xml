@@ -4,10 +4,10 @@
         id="com.example.myplugin.MediaVolumePlugin"
         version="1.0">
 
-   <name>Hello World Plugin</name>
+   <name>Media Volume Control</name>
 
    <description>
-      Just to run a plugin.
+      Just show the native Media Volume Control dialog box on Android.
    </description>
 
    <license>MIT</license>
