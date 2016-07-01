@@ -11,4 +11,4 @@ Run the following once the device ready event is fired:
 
 cordova.plugins.MediaVolumePlugin.show();
 
-That's it!
+An example project can be found here: https://play.google.com/store/apps/details?id=com.anon.wolyoom&hl=en
